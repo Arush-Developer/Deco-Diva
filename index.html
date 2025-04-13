@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deco Diva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Affordable modular DIY interior kits to transform any space – from bedrooms to balconies – with style and ease. Tool-free and rental-friendly.">
+  <meta name="keywords" content="DIY interior kits, modular design, affordable home decor, renter-friendly interiors, smart home decor, interior design startup">
+  <meta name="author" content="Deco Diva">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: #f6f6f6;
+      color: #333;
+      scroll-behavior: smooth;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: linear-gradient(135deg, #181818, #333);
+      color: white;
+      padding: 40px 20px 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .logo-container img {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1.2s ease;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .kits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .kit {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .kit:hover {
+      transform: scale(1.02);
+    }
+    .kit h3 {
+      margin: 0;
+      padding: 20px;
+      font-size: 1.4em;
+    }
+    .kit ul {
+      padding: 0 20px 20px 40px;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 40px auto 0;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    input[type="submit"]:hover {
+      background: #000;
+    }
+    .dark-mode {
+      background: #181818;
+      color: #eee;
+    }
+    .dark-mode header, .dark-mode footer {
+      background: #000;
+      color: #ccc;
+    }
+    .dark-mode .feature, .dark-mode .kit {
+      background: #222;
+      color: #fff;
+    }
+    .dark-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 999;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="dark-toggle" onclick="document.body.classList.toggle('dark-mode')">🌙 Toggle Dark Mode</button>
+
+  <header>
+    <div class="logo-container">
+      <img src="https://via.placeholder.com/60x60.png?text=Logo" alt="Logo" />
+      <div>
+        <h1>Deco Diva</h1>
+        <p>Modular DIY Interior Kits – Transform Your Space in 30 Minutes</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">🔧 Tool-Friendly – Only basic tools required</div>
+      <div class="feature">🏠 Rental-Friendly – No damage, fully removable</div>
+      <div class="feature">🎨 Customizable Themes – Boho, Minimalist & more</div>
+      <div class="feature">💡 Smart Add-Ons – LED lights, speakers, chargers</div>
+      <div class="feature">🌱 Eco-Friendly – Sustainable materials</div>
+      <div class="feature">💰 Affordable – Mix-and-match to fit your budget</div>
+    </div>
+  </section>
+
+  <section class="section" id="kits">
+    <h2>Our DIY Kits</h2>
+    <div class="kits">
+      <div class="kit">
+        <h3>Work-from-Home Kit</h3>
+        <ul>
+          <li>Wall-mounted foldable desk</li>
+          <li>Floating shelves & cord organizers</li>
+          <li>LED desk lamp with mood settings</li>
+        </ul>
+      </div>
+      <div class="kit">
+        <h3>Bedroom Glow-Up Kit</h3>
+        <ul>
+          <li>Stick-on headboards & LED mood lighting</li>
+          <li>Peel-and-stick wallpapers & decals</li>
+          <li>Stylish curtain upgrades</li>
+        </ul>
+      </div>
+      <div class="kit">
+        <h3>Living Room Revamp Kit</h3>
+        <ul>
+          <li>Peel-and-stick panels & planters</li>
+          <li>Modular media shelf & hooks</li>
+          <li>Ambient LED floor lamp</li>
+        </ul>
+      </div>
+      <div class="kit">
+        <h3>Balcony Garden Kit</h3>
+        <ul>
+          <li>Hanging planters & wooden panel walls</li>
+          <li>Weatherproof LED lighting</li>
+          <li>Vertical plant stand & storage</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cta">
+    <h2>Ready to Transform Your Space?</h2>
+    <p style="text-align: center; font-size: 1.2em;">Choose a kit, customize your theme, and upgrade your room today – all under 30 minutes.</p>
+    <p style="text-align: center; margin-top: 30px;"><a href="#" style="background: #222; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold;">Get Started</a></p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/moqgpzpg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deco Diva. All rights reserved.</p>
+    <p>Contact info coming soon.</p>
+  </footer>
+
+</body>
+</html>
